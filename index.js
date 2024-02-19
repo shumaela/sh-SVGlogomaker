@@ -2,15 +2,17 @@
 // Imported required packages
 // const inquirer = require ('inquirer');
 // const fs = require ('fs');
-// const {Circle, Triangle, Square} = require ('./lib/shapes'); 
+
+// const Triangle = require('./triangle');
+// const Circle = require('./circle');
+// const Square = require('./square');
 
 // Runs the application using imports from lib
 // Imported required packages
 const inquirer = require('inquirer');
 const fs = require('fs');
-const Triangle = require('./triangle');
-const Circle = require('./circle');
-const Square = require('./square');
+const {Circle, Triangle, Square} = require ('./lib/shapes'); 
+
 
 // Created an array of questions for user input
 const questions = [
@@ -26,7 +28,7 @@ const questions = [
   },
   {
     type: 'list',
-    name: 'shape',
+    name: 'shape',  
     message: 'Choose a shape:',
     choices: ['Circle', 'Triangle', 'Square'],
   },
@@ -47,13 +49,13 @@ async function generateLogo() {
     // and set its color
     let shape;
     switch (answers.shape) {
-      case 'circle':
+      case 'Circle':
         shape = new Circle(answers.shapeColor);
         break;
-      case 'triangle':
+      case 'Triangle':
         shape = new Triangle(answers.shapeColor);
         break;
-      case 'square':
+      case 'Square':
         shape = new Square(answers.shapeColor);
         break;
       default:
