@@ -1,9 +1,5 @@
 
 
-// const Triangle = require('./triangle');
-// const Circle = require('./circle');
-// const Square = require('./square');
-
 // Runs the application using imports from lib
 // Imported required packages
 const inquirer = require('inquirer');
@@ -30,7 +26,7 @@ const questions = [
     choices: ['Circle', 'Triangle', 'Square'],
   },
   {
-    type: 'input',
+    type: 'list',
     name: 'shapeColor',
     message: 'Choose a shape color:',
     choices: ['Red', 'Blue', 'Green'],
