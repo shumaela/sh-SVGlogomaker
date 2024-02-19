@@ -1,7 +1,4 @@
-// Runs the application using imports from lib
-// Imported required packages
-// const inquirer = require ('inquirer');
-// const fs = require ('fs');
+
 
 // const Triangle = require('./triangle');
 // const Circle = require('./circle');
@@ -68,8 +65,8 @@ async function generateLogo() {
     fs.writeFileSync('logo.svg', svgContent);
 
     console.log('Generated logo.svg');
-  } catch (error) {
-    console.error('Error:', error.message);
+  } catch (writeError) {
+    console.error('Error writing to logo.svg:', writeError.message);
   }
 }
 
