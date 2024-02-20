@@ -41,3 +41,11 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ![image](https://github.com/shumaela/sh-SVGlogomaker/assets/147661185/0137442b-89f1-453a-b868-5e5063cee29e)
 
 ![image](https://github.com/shumaela/sh-SVGlogomaker/assets/147661185/a2096741-ba12-4b2e-94f6-1f9e1e550986)
+
+### Walkthrough Video
+
+[Watch the Video](https://drive.google.com/file/d/17T9Rjh_Kb8xW0G0s0vVLdbnFZTKBRq0H/view)
+
+### Repo Link
+
+https://github.com/shumaela/sh-SVGlogomaker
