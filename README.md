@@ -1,6 +1,9 @@
 # sh-SVGlogomaker
 Module 10 HW
 
+### Description
+An application that allows users to generate a logo. 
+
 ### User Story
 
 ```md
