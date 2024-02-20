@@ -1,11 +1,9 @@
 
-
 // Runs the application using imports from lib
 // Imported required packages
 const inquirer = require('inquirer');
 const fs = require('fs');
-const {Circle, Triangle, Square} = require ('./lib/shapes'); 
-
+const { Circle, Triangle, Square } = require('./lib/shapes');
 
 // Created an array of questions for user input
 const questions = [
@@ -21,7 +19,7 @@ const questions = [
   },
   {
     type: 'list',
-    name: 'shape',  
+    name: 'shape',
     message: 'Choose a shape:',
     choices: ['Circle', 'Triangle', 'Square'],
   },
@@ -43,18 +41,22 @@ async function generateLogo() {
     let shape;
     switch (answers.shape) {
       case 'Circle':
-        shape = new Circle(answers.shapeColor);
+        shape = new Circle();
         break;
       case 'Triangle':
-        shape = new Triangle(answers.shapeColor);
+        shape = new Triangle();
         break;
       case 'Square':
-        shape = new Square(answers.shapeColor);
+        shape = new Square();
         break;
       default:
         console.log('Invalid shape choice');
         return;
     }
+
+    // Set the colors based on user input
+    shape.setShapeColor(answers.shapeColor);
+    shape.setTextColor(answers.textColor);
 
     // Render the shape and save it to logo.svg
     const svgContent = shape.render();
@@ -67,4 +69,5 @@ async function generateLogo() {
 }
 
 generateLogo();
+
 
