@@ -2,7 +2,10 @@
 Module 10 HW
 
 ### Description
-An application that allows users to generate a logo. 
+
+```md
+An application that allows users to generate a logo.
+ ```
 
 ### User Story
 
@@ -30,3 +33,11 @@ AND the output text "Generated logo.svg" is printed in the command line
 WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ```
+
+### Screenshots
+
+![image](https://github.com/shumaela/sh-SVGlogomaker/assets/147661185/c383113e-707b-44c3-92a1-2e6f62abfcf1)
+
+![image](https://github.com/shumaela/sh-SVGlogomaker/assets/147661185/0137442b-89f1-453a-b868-5e5063cee29e)
+
+![image](https://github.com/shumaela/sh-SVGlogomaker/assets/147661185/a2096741-ba12-4b2e-94f6-1f9e1e550986)
